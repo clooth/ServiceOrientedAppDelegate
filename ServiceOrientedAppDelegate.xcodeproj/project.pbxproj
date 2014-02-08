@@ -21,6 +21,8 @@
 		039F9B6618A6F1C400978A76 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039F9B4818A6F1C300978A76 /* UIKit.framework */; };
 		039F9B6E18A6F1C400978A76 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 039F9B6C18A6F1C400978A76 /* InfoPlist.strings */; };
 		039F9B7018A6F1C400978A76 /* ServiceOrientedAppDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 039F9B6F18A6F1C400978A76 /* ServiceOrientedAppDelegateTests.m */; };
+		039F9B7D18A6F1E500978A76 /* SOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 039F9B7C18A6F1E500978A76 /* SOAppDelegate.m */; };
+		039F9B8018A6F20E00978A76 /* PushNotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 039F9B7F18A6F20E00978A76 /* PushNotificationService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		039F9B6B18A6F1C400978A76 /* ServiceOrientedAppDelegateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ServiceOrientedAppDelegateTests-Info.plist"; sourceTree = "<group>"; };
 		039F9B6D18A6F1C400978A76 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		039F9B6F18A6F1C400978A76 /* ServiceOrientedAppDelegateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServiceOrientedAppDelegateTests.m; sourceTree = "<group>"; };
+		039F9B7B18A6F1E500978A76 /* SOAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOAppDelegate.h; sourceTree = "<group>"; };
+		039F9B7C18A6F1E500978A76 /* SOAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOAppDelegate.m; sourceTree = "<group>"; };
+		039F9B7E18A6F20E00978A76 /* PushNotificationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushNotificationService.h; sourceTree = "<group>"; };
+		039F9B7F18A6F20E00978A76 /* PushNotificationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushNotificationService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,8 @@
 		039F9B4A18A6F1C300978A76 /* ServiceOrientedAppDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				039F9B7918A6F1CA00978A76 /* SOAppDelegate */,
+				039F9B7A18A6F1CF00978A76 /* Services */,
 				039F9B5318A6F1C300978A76 /* AppDelegate.h */,
 				039F9B5418A6F1C300978A76 /* AppDelegate.m */,
 				039F9B5618A6F1C300978A76 /* Main.storyboard */,
@@ -150,6 +158,24 @@
 				039F9B6C18A6F1C400978A76 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		039F9B7918A6F1CA00978A76 /* SOAppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				039F9B7B18A6F1E500978A76 /* SOAppDelegate.h */,
+				039F9B7C18A6F1E500978A76 /* SOAppDelegate.m */,
+			);
+			name = SOAppDelegate;
+			sourceTree = "<group>";
+		};
+		039F9B7A18A6F1CF00978A76 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				039F9B7E18A6F20E00978A76 /* PushNotificationService.h */,
+				039F9B7F18A6F20E00978A76 /* PushNotificationService.m */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,7 +275,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				039F9B7D18A6F1E500978A76 /* SOAppDelegate.m in Sources */,
 				039F9B5B18A6F1C300978A76 /* ViewController.m in Sources */,
+				039F9B8018A6F20E00978A76 /* PushNotificationService.m in Sources */,
 				039F9B5518A6F1C300978A76 /* AppDelegate.m in Sources */,
 				039F9B5118A6F1C300978A76 /* main.m in Sources */,
 			);
